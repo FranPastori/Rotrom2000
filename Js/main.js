@@ -9,10 +9,10 @@ adicionar = addEventListener("click", somar)
 
 
 function subtrair (){ 
-    braco.value =  parseInt(braco.value) -=1 ;
+    braco.value =  parseInt(braco.value) -1;
 }
 
 function somar (){ 
 
-  braco.value = parseInt(braco.value) +=1 ;
+  braco.value = parseInt(braco.value) +1;
 }
