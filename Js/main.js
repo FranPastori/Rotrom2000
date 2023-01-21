@@ -2,17 +2,19 @@ const robotron = document.querySelector(".robo")
 var braco = document.querySelector("#braco");
 var tirar = document.querySelector("#subtrair");
 var adicionar = document.querySelector("#soma");
-tirar.addEventListener("click", function(){
-manipularDados("tirar")});
-adicionar.addEventListener("click", function(){
-    manipularDados("adiconar")});
+const controle = document.querySelectorAll(".controle-ajuste");
+
+controle.forEach (function(evento){ elemento.addEventListener("click", manipularDados (evento.target.textContent))});
+
 
 function manipularDados (operacao){
 
-    if( operacao==="tirar"){
+    if( operacao==="-"){
         braco.value = parseInt(braco.value) -1;
     }
     else{
         braco.value = parseInt(braco.value) +1;
     }
 }
+
+
