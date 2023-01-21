@@ -1,0 +1,1 @@
+document.querySelector(".robo").addEventListener("click",alert("oi"));
