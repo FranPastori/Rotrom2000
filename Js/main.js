@@ -2,8 +2,12 @@ const robotron = document.querySelector(".robo")
 var braco = document.querySelector("#braco");
 var tirar = document.querySelector("#subtrair");
 var adicionar = document.querySelector("#soma");
-tirar.addEventListener("click", function(evento){manipularDados("tirar")};
-adicionar.addEventListener("click", function(evento){manipularDados("adiconar")};
+
+
+tirar.addEventListener("click", function(evento){
+manipularDados("tirar")});
+adicionar.addEventListener("click", function(evento){
+    manipularDados("adiconar")});
 
 
 
