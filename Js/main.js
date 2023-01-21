@@ -1,1 +1,7 @@
-document.querySelector(".robo").addEventListener("click",alert("oi"));
+const robotron = document.querySelector(".robo")
+
+robotron.addEventListener("click",dizOi);
+
+function dizOi (){
+    alert("oi");
+}
