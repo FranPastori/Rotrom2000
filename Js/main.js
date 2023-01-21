@@ -3,12 +3,12 @@ var braco = document.querySelector("#braco");
 var tirar = document.querySelector("#subtrair");
 var adicionar = document.querySelector("#soma");
 
-tirar.addEventListener("click",subtrair);
+tirar.addEventListener("click",remove);
 adicionar = addEventListener("click", somar)
 
 
 
-function subtrair (){ 
+function remove (){ 
     braco.value =  parseInt(braco.value) -1;
 }
 
