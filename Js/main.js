@@ -1,7 +1,7 @@
 const robotron = document.querySelector(".robo")
 var braco = document.querySelector("#braco");
 var tirar = document.querySelector("#subtrair");
-var adicionar = document.querySelector("#adicionar");
+var adicionar = document.querySelector("#soma");
 
 tirar.addEventListener("click",subtrair);
 adicionar = addEventListener("click", somar)
