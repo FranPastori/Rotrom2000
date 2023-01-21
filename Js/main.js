@@ -4,7 +4,7 @@ var tirar = document.querySelector("#subtrair");
 var adicionar = document.querySelector("#soma");
 const controle = document.querySelectorAll(".controle-ajuste");
 
-controle.forEach (function(evento){ elemento.addEventListener("click", manipularDados (evento.target.textContent))});
+controle.forEach((elemento) => { elemento.addEventListener("click", manipularDados (evento.target.textContent))});
 
 
 function manipularDados (operacao){
