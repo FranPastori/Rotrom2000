@@ -14,5 +14,5 @@ function subtrair (){
 
 function somar (){ 
 
-  braco.value =  parseInt(braco.value) +=1 ;
+  braco.value = parseInt(braco.value) +=1 ;
 }
