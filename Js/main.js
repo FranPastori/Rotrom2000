@@ -1,5 +1,5 @@
 const robotron = document.querySelector(".robo")
-const braco = document.querySelector("#braco");
+let braco = document.querySelector("#braco");
 const tirar = document.querySelector("#subtrair");
 const adicionar = document.querySelector("#adicionar");
 
