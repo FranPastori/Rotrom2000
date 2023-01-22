@@ -225,7 +225,9 @@ section{
     width: 120px;
     height: auto;
 }
-
+.cor-imagem:hover{
+    transform: scale(1.1);
+}
 
 @media screen and (max-width: 1600px) {
     body { 
