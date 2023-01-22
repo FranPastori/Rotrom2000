@@ -209,12 +209,7 @@ main {
     margin: 10px 0 0;
 }
 /****************************** Cor *****/
-.cor{
-    display: flexbox;
-    justify-items: baseline;
-    align-items: left;
 
-}
 .cor-titulo {  
     font-size: 1.5em;
     border-bottom: 1px solid var(--main-cinza);
@@ -224,7 +219,7 @@ main {
     color:var(--main-branco);
 }
 .cor-imagem{
-    width: 20px;
+    width: 120px;
     height: auto;
 }
 
