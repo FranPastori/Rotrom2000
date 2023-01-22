@@ -212,7 +212,8 @@ section{
 }
 /****************************** Cor *****/
 
-.cor-titulo {  
+.cor-titulo { 
+    text-align: center;
     font-size: 1.5em;
     border-bottom: 1px solid var(--main-cinza);
     flex-basis: 40%;
