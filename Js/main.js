@@ -54,10 +54,7 @@ controle.forEach(function (elemento) {
 corRobo.forEach(function (elemento,indice) { 
     srcList.push(elemento.src)
     index = indice
-    corRobo[indice].addEventListener("click", function (indexCopy) { 
-        return function(){console.log(indexCopy)};
-        ;
-        escolheRobo() ;
+    corRobo[indice].addEventListener("click", function () { escolheRobo() ;
     });
 })
 //adicionando envento de click na imagem
@@ -69,7 +66,6 @@ function escolheRobo(robo) {
  imagemPrincipal.src = srcList[index];
 console.log(index)
 console.log(srcList[index]);}
-
 function manipularDados(operacao, controle) {
     var peca = controle.querySelector(".controle-contador");
     if (operacao === "-") {
