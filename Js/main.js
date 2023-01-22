@@ -51,10 +51,10 @@ controle.forEach(function (elemento) {
 });
 //adicionando envento de click na imagem
 for (var i = 0; i < corRobo.length; i++) {
-    corRobo.forEach(function (elemento) { srcList.push(elemento.src) });
+  
     corRobo[i].addEventListener("click", function () {
+        corRobo.forEach(function (elemento) { srcList.push(elemento.src) });
         imagemPrincipal.src = srcList[i]
-
     })
         ;
 }
