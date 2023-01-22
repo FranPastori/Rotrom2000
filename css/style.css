@@ -244,7 +244,9 @@ section{
     body { 
         font-size: 13px;
     }
-
+    .robo{
+        height: 45vh;
+    }
     main {
         width: 96vw;
         height: 80vh;
