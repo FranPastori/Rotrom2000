@@ -39,7 +39,10 @@ const pecas = {
 const estatistica = document.querySelectorAll("[data-estatisticas]");
 var corRobo = document.querySelectorAll(".cor-imagem");
 var imagemPrincipal = document.querySelector(".robo");
+var srcList = [];
+
 console.log(imagemPrincipal);
+console.log(srcList);
 controle.forEach(function (elemento) {
     elemento.addEventListener("click", (evento) => {
         manipularDados(evento.target.textContent, evento.target.parentNode)
@@ -48,11 +51,9 @@ controle.forEach(function (elemento) {
 });
 //adicionando envento de click na imagem
 for (var i=0; i < corRobo.length; i++){
-    corRobo[i].addEventListener("click", function(){
-       console.log(corRobo.src);
-    })
+    srcList.push(corRobo[i].src);
+    }
 
-}
 
 function manipularDados(operacao, controle) {
     var peca = controle.querySelector(".controle-contador");
