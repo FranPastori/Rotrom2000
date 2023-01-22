@@ -58,7 +58,7 @@ function manipularDados(operacao, controle) {
     }
 }
 
-function atualizaEstatistica(pecas) {
+function atualizaEstatistica(peca) {
 estatistica.forEach(
     (elemento)=> {
         console.log(pecas[peca])
