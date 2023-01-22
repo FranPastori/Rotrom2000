@@ -39,11 +39,6 @@ const pecas = {
 const estatistica = document.querySelectorAll("[data-estatisticas]");
 var corRobo = document.querySelectorAll(".cor-imagem");
 var imagemPrincipal = document.querySelector(".robo");
-var srcList = [];
-var index;
-
-console.log(imagemPrincipal);
-console.log(srcList);
 
 controle.forEach(function (elemento) {
     elemento.addEventListener("click", (evento) => {
@@ -51,38 +46,12 @@ controle.forEach(function (elemento) {
         atualizaEstatistica(evento.target.dataset.pecas);
     });
 });
-// corRobo.forEach(function (elemento,indice) { 
-//     srcList.push(elemento.src)
-//     index = indice
-//     corRobo[indice].addEventListener("click", function () { escolheRobo() ;
-//     });
-// })
-// //adicionando envento de click na imagem
-// for (var i = 0; i < corRobo.length; i++) {
-   
-// }
 
-//_________________________________________________________________
-//loop através da lista de imagens
 for (var i = 0; i < corRobo.length; i++) {
-    //cria um novo elemento de imagem;
-    //define um evento de clique para a imagem
     corRobo[i].addEventListener("click", function(){
-      //atualiza a fonte da imagem grande com a fonte da imagem clicada
       imagemPrincipal.src = this.src;
     });
   }
-
-
-
-
-
-
-function escolheRobo(robo) {
-
- imagemPrincipal.src = srcList[index];
-console.log(index)
-console.log(srcList[index]);}
 function manipularDados(operacao, controle) {
     var peca = controle.querySelector(".controle-contador");
     if (operacao === "-") {
