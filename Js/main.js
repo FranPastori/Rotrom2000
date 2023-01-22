@@ -41,7 +41,7 @@ var corRobo = document.querySelectorAll(".cor-imagem");
 var imagemPrincipal = document.querySelector(".robo");
 var srcList = [];
 
-console.log(imagemPrincipal);
+console.log(imagemPrincipal.src);
 console.log(srcList);
 controle.forEach(function (elemento) {
     elemento.addEventListener("click", (evento) => {
@@ -50,13 +50,13 @@ controle.forEach(function (elemento) {
     });
 });
 //adicionando envento de click na imagem
-for (var i=0; i < corRobo.length; i++){
-    var src = corRobo[i].src.split("/").pop();
-    srcList.push(src);
+//for (var i=0; i < corRobo.length; i++){
+//    var src = corRobo[i].src.split("/").pop();
+  //  srcList.push(src);
 
-    corRobo[i].addEventListener("click",function(){mundandoImagem();})
+    //corRobo[i].addEventListener("click",function(){mundandoImagem();})
     ;
-    }
+  //  }
 
 function mundandoImagem(){
     srcList.forEach((elemento)=>imagemPrincipal.src = elemento.textContent )
