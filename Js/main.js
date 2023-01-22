@@ -37,7 +37,8 @@ const pecas = {
     }
 }
 const estatistica = document.querySelectorAll("[data-estatisticas]");
-
+var corRobo = document.querySelectorAll(".cor-imagem");
+console.log(corRobo);
 
 controle.forEach(function (elemento) {
     elemento.addEventListener("click", (evento) => {
