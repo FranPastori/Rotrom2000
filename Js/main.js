@@ -37,7 +37,7 @@ const pecas = {
     }
 }
 const estatistica = document.querySelectorAll("[data-estatisticas]");
-var corRobo = document.querySelectorAll(".cor-imagem");
+var corRobo = document.querySelector(".cor-imagem");
 var imagemPrincipal = document.querySelectorAll(".robo");
 console.log(imagemPrincipal);
 controle.forEach(function (elemento) {
@@ -48,6 +48,10 @@ controle.forEach(function (elemento) {
 });
 //adicionando envento de click na imagem
 for (var i=0; i < corRobo.length; i++){
+
+    corRobo[i].addEventListener("click", function(){
+        imagemPrincipal.scr = corRobo[i].src;
+    })
 
 }
 
