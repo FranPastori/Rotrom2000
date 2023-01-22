@@ -40,6 +40,7 @@ const estatistica = document.querySelectorAll("[data-estatisticas]");
 var corRobo = document.querySelectorAll(".cor-imagem");
 var imagemPrincipal = document.querySelector(".robo");
 var srcList = [];
+var index;
 
 console.log(imagemPrincipal);
 console.log(srcList);
@@ -53,16 +54,13 @@ controle.forEach(function (elemento) {
 corRobo.forEach(function (elemento) { srcList.push(elemento.src) })
 //adicionando envento de click na imagem
 for (var i = 0; i < corRobo.length; i++) {
-
+    index = i
     corRobo[i].addEventListener("click", function () { escolheRobo() ;
     });
 }
 function escolheRobo(robo) {
 
-    var index = corRobo.indexOf(Selection);
-    console.log(index);
-
-     //   imagemPrincipal.src =;
+ imagemPrincipal.src = srcList[index];
 
         }
 function manipularDados(operacao, controle) {
