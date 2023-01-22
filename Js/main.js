@@ -54,7 +54,7 @@ controle.forEach(function (elemento) {
 corRobo.forEach(function (elemento,indice) { 
     srcList.push(elemento.src)
     index = indice
-    corRobo.addEventListener("click", function () { escolheRobo() ;
+    corRobo[indice].addEventListener("click", function () { escolheRobo() ;
     });
 })
 //adicionando envento de click na imagem
