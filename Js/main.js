@@ -61,8 +61,8 @@ function manipularDados(operacao, controle) {
 function atualizaEstatistica(peca) {
 estatistica.forEach(
     (elemento)=> {
-        console.log(pecas[peca])
-       //elemento.textContent = parseInt(elemento.textContent) + pecas[pecas][elemento.dataset.estatisticas]
+        console.log()
+    elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatisticas]
     }
 )   
 }
