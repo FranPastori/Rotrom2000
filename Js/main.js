@@ -55,8 +55,8 @@ corRobo.forEach(function (elemento,indice) {
     srcList.push(elemento.src)
     index = indice
     corRobo[indice].addEventListener("click", function (indexCopy) { 
-        return function();
-        console.log(indexCopy);
+        return function(){console.log(indexCopy)};
+        ;
         escolheRobo() ;
     });
 })
