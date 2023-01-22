@@ -67,7 +67,7 @@ controle.forEach(function (elemento) {
 for (var i = 0; i < corRobo.length; i++) {
     //cria um novo elemento de imagem;
     //define um evento de clique para a imagem
-    img.addEventListener("click", function(){
+    corRobo.addEventListener("click", function(){
       //atualiza a fonte da imagem grande com a fonte da imagem clicada
       imagemPrincipal.src = this.src;
     });
