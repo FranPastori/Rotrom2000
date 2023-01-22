@@ -43,6 +43,7 @@ var srcList = [];
 
 console.log(imagemPrincipal);
 console.log(srcList);
+
 controle.forEach(function (elemento) {
     elemento.addEventListener("click", (evento) => {
         manipularDados(evento.target.textContent, evento.target.parentNode)
@@ -50,17 +51,18 @@ controle.forEach(function (elemento) {
     });
 });
 //adicionando envento de click na imagem
-for (var i = 0; i < corRobo.length; i++){
-  
+for (var i = 0; i < corRobo.length; i++) {
+
     corRobo[i].addEventListener("click", function () {
-        corRobo.forEach (function(elemento, i) {srcList.push(elemento.src)})
-        escolheRobo(i)})  ;
+        corRobo.forEach(function (elemento) { srcList.push(elemento.src) })
+        escolheRobo(i)
+    });
 }
-function escolheRobo(robo){
-    for (var i = 0; i < corRobo.length; i++) {
-    imagemPrincipal.src = srcList[robo].src
-}
-}
+// function escolheRobo(robo){
+//     for (var i = 0; i < corRobo.length; i++) {
+//     imagemPrincipal.src = srcList[robo].src
+// }
+// }
 function manipularDados(operacao, controle) {
     var peca = controle.querySelector(".controle-contador");
     if (operacao === "-") {
