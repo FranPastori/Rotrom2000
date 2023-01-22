@@ -59,8 +59,10 @@ function manipularDados(operacao, controle) {
 }
 
 function atualizaEstatistica(peca) {
-console.log(peca);
-   
+estatistica.forEach(
+    (elemento)=> {console.log(elemento.textContent );
+    console.log(elemento.dataset.estatisticas);}
+)   
 }
 
 
