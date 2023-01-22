@@ -59,11 +59,13 @@ function manipularDados(operacao, controle) {
 }
 
 function atualizaEstatistica(peca) {
+    var peca = controle.querySelector(".controle-contador");
 estatistica.forEach(
     (elemento)=> {
-        console.log()
-    elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatisticas]
-    }
+    if(peca.value>=1)
+    {elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatisticas]
+   }
+     }
 )   
 }
 
