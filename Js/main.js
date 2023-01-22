@@ -61,7 +61,8 @@ for (var i = 0; i < corRobo.length; i++) {
 function escolheRobo(robo) {
 
  imagemPrincipal.src = srcList[index];
-
+console.log(index)
+console.log(srcList[index]),
         }
 function manipularDados(operacao, controle) {
     var peca = controle.querySelector(".controle-contador");
