@@ -50,15 +50,15 @@ controle.forEach(function (elemento) {
     });
 });
 //adicionando envento de click na imagem
-for (var i = 0; i < corRobo.length; i++) {
+for (var i = 0; i < corRobo.length; i++){
   
-    corRobo[i].addEventListener("click", function () {
-        corRobo.forEach(function (elemento) { imagemPrincipal.src = elemento.src});
-        
-    })  ;
+    corRobo[i].addEventListener("click", function () {escolheRobo(i)  })  ;
 }
-
-
+function escolheRobo(robo){
+    for (var i = 0; i < corRobo.length; i++) {
+    imagemPrincipal.src = srcList[robo].src
+}
+}
 function manipularDados(operacao, controle) {
     var peca = controle.querySelector(".controle-contador");
     if (operacao === "-") {
