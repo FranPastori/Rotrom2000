@@ -249,7 +249,7 @@ section{
         z-index: 1;
         position: absolute;
         left: -20%;
-        bottom: -5%;
+        top: -5%;
     }
     main {
         width: 96vw;
