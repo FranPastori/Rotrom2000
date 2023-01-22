@@ -54,7 +54,7 @@ corRobo.forEach(function (elemento) { srcList.push(elemento.src) })
 //adicionando envento de click na imagem
 for (var i = 0; i < corRobo.length; i++) {
 
-    corRobo[i].addEventListener("click", function () { escolheRobo ;
+    corRobo[i].addEventListener("click", function () { escolheRobo() ;
     });
 }
 function escolheRobo(robo) {
