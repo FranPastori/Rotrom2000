@@ -50,7 +50,7 @@ controle.forEach(function (elemento) {
 for (var i=0; i < corRobo.length; i++){
 
     corRobo[i].addEventListener("click", function(){
-        imagemPrincipal.scr = corRobo[i].src;
+       console.log(corRobo[i].src);
     })
 
 }
