@@ -213,8 +213,8 @@ main {
     border-bottom: 1px solid var(--main-cinza);
     flex-basis: 40%;
     text-transform: uppercase;
-    order: 1
-    color:var(--main-branco)
+    order: 1;
+    color:var(--main-branco);
 }
 
 @media screen and (max-width: 1600px) {
