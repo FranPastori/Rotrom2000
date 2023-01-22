@@ -51,18 +51,22 @@ controle.forEach(function (elemento) {
         atualizaEstatistica(evento.target.dataset.pecas);
     });
 });
-corRobo.forEach(function (elemento) { srcList.push(elemento.src) })
+corRobo.forEach(function (elemento,indice) { 
+    srcList.push(elemento.src)
+    index = indice
+    corRobo.addEventListener("click", function () { escolheRobo() ;
+    });
+})
 //adicionando envento de click na imagem
 for (var i = 0; i < corRobo.length; i++) {
-    index = i
-    corRobo[i].addEventListener("click", function () { escolheRobo() ;
-    });
+   
 }
 function escolheRobo(robo) {
 
  imagemPrincipal.src = srcList[index];
 console.log(index)
 console.log(srcList[index]);}
+
 function manipularDados(operacao, controle) {
     var peca = controle.querySelector(".controle-contador");
     if (operacao === "-") {
