@@ -42,7 +42,6 @@ const estatistica = document.querySelectorAll("[data-estatisticas]");
 controle.forEach(function(elemento){ elemento.addEventListener("click",(evento) =>{
     manipularDados(evento.target.textContent,evento.target.parentNode)}
     atualizaEstatistica(event.target.dataset.peca);
-    console.log(peca);
     );});
 
 
