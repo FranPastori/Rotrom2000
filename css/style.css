@@ -245,9 +245,9 @@ section{
         font-size: 13px;
     }
     .robo{
+        position: relative;
         height: 45vh;
         z-index: 1;
-        position: absolute;
         left: -20%;
         top: -5%;
     }
