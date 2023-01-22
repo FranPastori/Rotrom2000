@@ -50,11 +50,12 @@ controle.forEach(function (elemento) {
         atualizaEstatistica(evento.target.dataset.pecas);
     });
 });
+corRobo.forEach(function (elemento) { srcList.push(elemento.src)})
 //adicionando envento de click na imagem
 for (var i = 0; i < corRobo.length; i++) {
 
     corRobo[i].addEventListener("click", function () {
-        corRobo.forEach(function (elemento) { srcList.push(elemento.src)})
+        
         for (var i = 0; i < srcList.length; i++)
         imagemPrincipal.src = srcList[i];
     });
