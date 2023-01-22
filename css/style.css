@@ -63,6 +63,7 @@ main {
     clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
     border-left: 5px solid var(--main-cinza);
     height: 80%;
+    width: 25%;
 }
 
 /****************************** Equipamentos *****/
@@ -219,6 +220,7 @@ main {
     color:var(--main-branco);
 }
 .cor-imagem{
+    display: block;
     width: 120px;
     height: auto;
 }
