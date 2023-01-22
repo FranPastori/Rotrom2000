@@ -36,9 +36,14 @@ const pecas = {
         "velocidade": -2
     }
 }
-const estatisitca = document.querySelectorAll("[data-estatisticas]");
-console.log(estatisitca);
-controle.forEach(function(elemento){ elemento.addEventListener("click",(evento) =>{manipularDados(evento.target.textContent,evento.target.parentNode)});});
+const estatistica = document.querySelectorAll("[data-estatisticas]");
+
+
+controle.forEach(function(elemento){ elemento.addEventListener("click",(evento) =>{
+    manipularDados(evento.target.textContent,evento.target.parentNode)}
+    atualizaEstatistica(event.target.dataset.peca);
+    console.log(peca);
+    );});
 
 
 function manipularDados (operacao,controle){
@@ -49,6 +54,14 @@ function manipularDados (operacao,controle){
     else{
         peca.value = parseInt(peca.value) +1;
     }
+}
+
+function manipularDados(peca){
+
+    estatistica.forEach((elemento)=>{
+        elemento.textContent = parseInt(elemento.textContent)+ pecas[peca][elemento.dataset.estatistica];
+    })
+
 }
 
 
