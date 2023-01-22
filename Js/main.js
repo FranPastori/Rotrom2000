@@ -54,12 +54,15 @@ corRobo.forEach(function (elemento) { srcList.push(elemento.src) })
 //adicionando envento de click na imagem
 for (var i = 0; i < corRobo.length; i++) {
 
-    corRobo[i].addEventListener("click", function () { console.log("clicou"+ corRobo[1]);
+    corRobo[i].addEventListener("click", function () { ;
     });
 }
 function escolheRobo(robo) {
-    for (var i = 0; i < srcList.length; i++)
-        imagemPrincipal.src = srcList[i];
+    srcList.forEach(function(elemento){
+        console.log(elemento);
+        imagemPrincipal.src = elemento;
+    })
+        ;
 }
 function manipularDados(operacao, controle) {
     var peca = controle.querySelector(".controle-contador");
