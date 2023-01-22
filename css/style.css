@@ -246,6 +246,7 @@ section{
     }
     .robo{
         height: 45vh;
+        bottom: -5%;
     }
     main {
         width: 96vw;
