@@ -45,7 +45,7 @@ section{
     z-index: 1;
     position: absolute;
     left: -20%;
-    top: -5%;
+    top: 14%;
 }
 
 .titulo {
@@ -240,7 +240,7 @@ section{
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
     body { 
         font-size: 13px;
     }
@@ -249,7 +249,7 @@ section{
         height: 45vh;
         z-index: 1;
         left: -20%;
-        top: -5%;
+        top: -35%;
     }
     main {
         width: 96vw;
