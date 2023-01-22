@@ -209,11 +209,12 @@ main {
     margin: 10px 0 0;
 }
 /****************************** Cor *****/
-.cor {   font-size: 1.5em;
+.cor {  font-size: 1.5em;
     border-bottom: 1px solid var(--main-cinza);
     flex-basis: 40%;
     text-transform: uppercase;
     order: 1
+    color:var(--main-branco)
 }
 
 @media screen and (max-width: 1600px) {
