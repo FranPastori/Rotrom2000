@@ -62,8 +62,7 @@ function escolheRobo(robo) {
 
  imagemPrincipal.src = srcList[index];
 console.log(index)
-console.log(srcList[index]),
-        }
+console.log(srcList[index]);}
 function manipularDados(operacao, controle) {
     var peca = controle.querySelector(".controle-contador");
     if (operacao === "-") {
