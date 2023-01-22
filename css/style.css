@@ -59,11 +59,11 @@ main {
 }
 
 .box {
+    width: 45vw;
+    height:80vh;
     background: rgba(0,0,0,0.6);
     clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
     border-left: 5px solid var(--main-cinza);
-    height: 80%;
-    width: 25%;
 }
 
 /****************************** Equipamentos *****/
