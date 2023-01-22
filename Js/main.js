@@ -48,7 +48,6 @@ controle.forEach(function (elemento) {
 });
 //adicionando envento de click na imagem
 for (var i=0; i < corRobo.length; i++){
-
     corRobo[i].addEventListener("click", function(){
        console.log(corRobo[i].src);
     })
