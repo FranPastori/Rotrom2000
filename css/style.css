@@ -246,6 +246,9 @@ section{
     }
     .robo{
         height: 45vh;
+        z-index: 1;
+        position: absolute;
+        left: -20%;
         bottom: -5%;
     }
     main {
