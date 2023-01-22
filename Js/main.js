@@ -53,6 +53,7 @@ controle.forEach(function (elemento) {
 for (var i=0; i < corRobo.length; i++){
     var src = corRobo[i].src.split("/").pop();
     srcList.push(src);
+    
     corRobo[i].addEventListener("click",function(){imagemPrincipal.src = srcList [i]})
     ;
     }
