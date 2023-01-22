@@ -55,7 +55,8 @@ for (var i = 0; i < corRobo.length; i++) {
 
     corRobo[i].addEventListener("click", function () {
         corRobo.forEach(function (elemento) { srcList.push(elemento.src)})
-        imagemPrincipal.src = srcList[2];
+        for (var i = 0; i < srcList.length; i++)
+        imagemPrincipal.src = srcList[i];
     });
 }
 // function escolheRobo(robo){
