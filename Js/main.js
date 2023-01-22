@@ -58,12 +58,13 @@ for (var i = 0; i < corRobo.length; i++) {
     });
 }
 function escolheRobo(robo) {
-    srcList.forEach(function(elemento){
-        console.log(elemento);
-        imagemPrincipal.src = elemento;
-    })
-        ;
-}
+
+    var index = corRobo.indexOf(corRobo[i]);
+    console.log(index);
+
+     //   imagemPrincipal.src =;
+
+        }
 function manipularDados(operacao, controle) {
     var peca = controle.querySelector(".controle-contador");
     if (operacao === "-") {
