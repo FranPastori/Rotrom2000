@@ -209,13 +209,25 @@ main {
     margin: 10px 0 0;
 }
 /****************************** Cor *****/
-.cor {  font-size: 1.5em;
+.cor{
+    display: flexbox;
+    justify-items: baseline;
+    align-items: left;
+
+}
+.cor-titulo {  
+    font-size: 1.5em;
     border-bottom: 1px solid var(--main-cinza);
     flex-basis: 40%;
     text-transform: uppercase;
     order: 1;
     color:var(--main-branco);
 }
+.cor-imagem{
+    width: 40vw;
+    height: auto;
+}
+
 
 @media screen and (max-width: 1600px) {
     body { 
