@@ -41,7 +41,7 @@ var corRobo = document.querySelectorAll(".cor-imagem");
 var imagemPrincipal = document.querySelector(".robo");
 var srcList = [];
 
-console.log(imagemPrincipal.src);
+console.log(imagemPrincipal);
 console.log(srcList);
 controle.forEach(function (elemento) {
     elemento.addEventListener("click", (evento) => {
@@ -50,18 +50,16 @@ controle.forEach(function (elemento) {
     });
 });
 //adicionando envento de click na imagem
-//for (var i=0; i < corRobo.length; i++){
-//    var src = corRobo[i].src.split("/").pop();
-  //  srcList.push(src);
+for (var i = 0; i < corRobo.length; i++) {
+    corRobo.forEach(function (elemento) { srcList.push(elemento.src) });
+    corRobo[i].addEventListener("click", function () {
+        imagemPrincipal.src = srcList[i]
 
-    //corRobo[i].addEventListener("click",function(){mundandoImagem();})
-    ;
-  //  }
-
-function mundandoImagem(){
-    srcList.forEach((elemento)=>imagemPrincipal.src = elemento.textContent )
-    
+    })
+        ;
 }
+
+
 function manipularDados(operacao, controle) {
     var peca = controle.querySelector(".controle-contador");
     if (operacao === "-") {
@@ -73,11 +71,11 @@ function manipularDados(operacao, controle) {
 }
 
 function atualizaEstatistica(peca) {
-estatistica.forEach(
-    (elemento)=> {
-    elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatisticas]
-    }
-)   
+    estatistica.forEach(
+        (elemento) => {
+            elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatisticas]
+        }
+    )
 }
 
 
