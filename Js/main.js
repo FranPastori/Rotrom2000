@@ -50,7 +50,7 @@ controle.forEach(function (elemento) {
 
 function manipularDados(operacao, controle) {
     var peca = controle.querySelector(".controle-contador");
-    if (operacao === "-" & peca.value>=0) {
+    if (operacao === "-" & peca.value>0) {
         peca.value = parseInt(peca.value) - 1;
     }
     else {
