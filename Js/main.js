@@ -53,7 +53,7 @@ function manipularDados(operacao, controle) {
     if (operacao === "-" & peca.value>=1) {
         peca.value = parseInt(peca.value) - 1;
     }
-    else {
+    else if(operacao === "+") {
         peca.value = parseInt(peca.value) + 1;
     }
 }
