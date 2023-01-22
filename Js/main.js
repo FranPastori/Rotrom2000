@@ -59,7 +59,7 @@ for (var i = 0; i < corRobo.length; i++) {
 }
 function escolheRobo(robo) {
 
-    var index = corRobo.indexOf(corRobo[i]);
+    var index = corRobo.indexOf(Selection);
     console.log(index);
 
      //   imagemPrincipal.src =;
