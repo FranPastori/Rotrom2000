@@ -50,21 +50,17 @@ controle.forEach(function (elemento) {
         atualizaEstatistica(evento.target.dataset.pecas);
     });
 });
-corRobo.forEach(function (elemento) { srcList.push(elemento.src)})
+corRobo.forEach(function (elemento) { srcList.push(elemento.src) })
 //adicionando envento de click na imagem
 for (var i = 0; i < corRobo.length; i++) {
 
-    corRobo[i].addEventListener("click", function () {
-        
-        for (var i = 0; i < srcList.length; i++)
-        imagemPrincipal.src = srcList[i];
+    corRobo[i].addEventListener("click", function () { escolheRobo();
     });
 }
-// function escolheRobo(robo){
-//     for (var i = 0; i < corRobo.length; i++) {
-//     imagemPrincipal.src = srcList[robo].src
-// }
-// }
+function escolheRobo(robo) {
+    for (var i = 0; i < srcList.length; i++)
+        imagemPrincipal.src = srcList[i];
+}
 function manipularDados(operacao, controle) {
     var peca = controle.querySelector(".controle-contador");
     if (operacao === "-") {
