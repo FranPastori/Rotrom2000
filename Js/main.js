@@ -38,16 +38,18 @@ const pecas = {
 }
 const estatistica = document.querySelectorAll("[data-estatisticas]");
 var corRobo = document.querySelectorAll(".cor-imagem");
-console.log(corRobo);
-
+var imagemPrincipal = document.querySelectorAll(".robo");
+console.log(imagemPrincipal);
 controle.forEach(function (elemento) {
     elemento.addEventListener("click", (evento) => {
         manipularDados(evento.target.textContent, evento.target.parentNode)
         atualizaEstatistica(evento.target.dataset.pecas);
     });
 });
+//adicionando envento de click na imagem
+for (var i=0; i < corRobo.length; i++){
 
-
+}
 
 function manipularDados(operacao, controle) {
     var peca = controle.querySelector(".controle-contador");
