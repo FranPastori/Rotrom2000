@@ -52,7 +52,9 @@ controle.forEach(function (elemento) {
 //adicionando envento de click na imagem
 for (var i = 0; i < corRobo.length; i++){
   
-    corRobo[i].addEventListener("click", function () {escolheRobo(i)  })  ;
+    corRobo[i].addEventListener("click", function () {
+        srcList.push(corRobo[i].src)
+        escolheRobo(i)})  ;
 }
 function escolheRobo(robo){
     for (var i = 0; i < corRobo.length; i++) {
