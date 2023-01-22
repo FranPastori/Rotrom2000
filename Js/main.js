@@ -36,7 +36,7 @@ const pecas = {
         "velocidade": -2
     }
 }
-const estatisitca = querySelectorAll("[data-estatistica]");
+const estatisitca = document.querySelectorAll("[data-estatisticas]");
 console.log(estatisitca);
 controle.forEach(function(elemento){ elemento.addEventListener("click",(evento) =>{manipularDados(evento.target.textContent,evento.target.parentNode)});});
 
