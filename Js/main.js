@@ -51,16 +51,33 @@ controle.forEach(function (elemento) {
         atualizaEstatistica(evento.target.dataset.pecas);
     });
 });
-corRobo.forEach(function (elemento,indice) { 
-    srcList.push(elemento.src)
-    index = indice
-    corRobo[indice].addEventListener("click", function () { escolheRobo() ;
-    });
-})
-//adicionando envento de click na imagem
-for (var i = 0; i < corRobo.length; i++) {
+// corRobo.forEach(function (elemento,indice) { 
+//     srcList.push(elemento.src)
+//     index = indice
+//     corRobo[indice].addEventListener("click", function () { escolheRobo() ;
+//     });
+// })
+// //adicionando envento de click na imagem
+// for (var i = 0; i < corRobo.length; i++) {
    
-}
+// }
+
+//_________________________________________________________________
+//loop através da lista de imagens
+for (var i = 0; i < corRobo.length; i++) {
+    //cria um novo elemento de imagem;
+    //define um evento de clique para a imagem
+    img.addEventListener("click", function(){
+      //atualiza a fonte da imagem grande com a fonte da imagem clicada
+      imagemPrincipal.src = this.src;
+    });
+  }
+
+
+
+
+
+
 function escolheRobo(robo) {
 
  imagemPrincipal.src = srcList[index];
