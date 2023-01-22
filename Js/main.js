@@ -50,22 +50,19 @@ controle.forEach(function (elemento) {
 
 function manipularDados(operacao, controle) {
     var peca = controle.querySelector(".controle-contador");
-    if (operacao === "-" & peca.value>=1) {
+    if (operacao === "-") {
         peca.value = parseInt(peca.value) - 1;
     }
-    else if(operacao === "+") {
+    else {
         peca.value = parseInt(peca.value) + 1;
     }
 }
 
 function atualizaEstatistica(peca) {
-    var peca = controle.querySelector(".controle-contador");
 estatistica.forEach(
     (elemento)=> {
-    if(peca.value>=1)
-    {elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatisticas]
-   }
-     }
+    elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatisticas]
+    }
 )   
 }
 
